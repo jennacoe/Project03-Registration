@@ -7,7 +7,115 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  color: #2d3945;
+  background-color: #fff;
+  font-family: 'Merriweather', serif;
 }
+
+header h2 {
+  color: #fff;
+  background-color: #2d3945;
+  padding: 25px;
+}
+
+fieldset h2 {
+  text-align: left;
+  border-top: 3px solid #2d3945;
+  padding-top: 30px;
+  width: 320px;
+  margin: 5px auto 15px;
+}
+
+h2 {
+  margin: 0;
+  padding: 25px 0 15px;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+h2+h3 {
+  margin: 0 auto; 
+  padding: 0; 
+  font-size: 1.1em;
+  text-align: left;
+  width: 320px;
+}
+
+h2+p {
+  color: #b7bcbf;
+  margin: 0;
+  font-size: 0.9em;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 29px;
+  border-bottom: 5px solid #2d3945;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0px;
+}
+
+label {
+  display: block;
+  width: 320px;
+  margin: 0 auto 10px;
+  color: #8693a0;
+}
+
+#newsletter label {
+  margin: 10px 0px 15px auto;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), select, textarea {
+  width: 320px;
+  background-color: #eff0f1;
+  border: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  height: 50px;
+  display: block;
+  margin: auto;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  position: absolute;
+  left: 15px;
+}
+
+select {
+  margin-bottom: 15px;
+}
+
+input::-webkit-input-placeholder {
+  text-align: right;
+  font-style: italic;
+  font-size: 1em;
+  padding-right: 10px;
+}
+
+input::-moz-input-placeholder {
+  text-align: right;
+  font-style: italic;
+  font-size: 1em;
+  padding-right: 10px;
+}
+
+input:-moz-input-placeholder {
+  text-align: right;
+  font-style: italic;
+  font-size: 1em;
+  padding-right: 10px;
+}
+
+input:-ms-webkit-input-placeholder {
+  text-align: right;
+  font-style: italic;
+  font-size: 1em;
+  padding-right: 10px;
+}
+
 /* Link Styles */
 
 a {
