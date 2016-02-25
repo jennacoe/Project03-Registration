@@ -6,49 +6,25 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
   color: #2d3945;
   background-color: #fff;
   font-family: 'Merriweather', serif;
 }
 
-header h2 {
-  color: #fff;
-  background-color: #2d3945;
-  padding: 25px;
+form {
+  width: 300px;
+  margin: auto;
 }
 
-fieldset h2 {
+legend {
   text-align: left;
-  border-top: 3px solid #2d3945;
-  padding-top: 30px;
-  width: 320px;
-  margin: 5px auto 15px;
-}
-
-h2 {
-  margin: 0;
-  padding: 25px 0 15px;
+  padding: 30px 0 5px;
+  width: 300px;
   font-size: 1.25em;
-  text-align: center;
 }
 
-h2+h3 {
-  margin: 0 auto; 
-  padding: 0; 
-  font-size: 1.1em;
-  text-align: left;
-  width: 320px;
-}
-
-h2+p {
-  color: #b7bcbf;
-  margin: 0;
-  font-size: 0.9em;
-  text-align: center;
-  line-height: 1.5;
-  padding-bottom: 29px;
-  border-bottom: 5px solid #2d3945;
+#contact legend {
+  margin-bottom: 20px;
 }
 
 fieldset {
@@ -59,17 +35,45 @@ fieldset {
 
 label {
   display: block;
-  width: 320px;
   margin: 0 auto 10px;
   color: #8693a0;
+  width: 300px;
 }
 
 #newsletter label {
-  margin: 10px 0px 15px auto;
+  display: inline-block;
+  width: 275px;
+}
+
+.labelHeader {
+  line-height: 1.9;
+  margin: 15px 0 20px;
+}
+
+textarea{
+  height: 100px;
+  padding-top: 15px;
+}
+
+select {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+button {
+  width: 300px;
+  margin-top: 30px;
+  height: 50px;
+  background-color: #4ebbb5;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
 }
 
 input:not([type="radio"]):not([type="checkbox"]), select, textarea {
-  width: 320px;
   background-color: #eff0f1;
   border: 0;
   border-radius: 5px;
@@ -77,38 +81,25 @@ input:not([type="radio"]):not([type="checkbox"]), select, textarea {
   height: 50px;
   display: block;
   margin: auto;
+  width: 300px;
+  padding-left: 20px;
+  transition: background-color 1s ease;
 }
 
 input[type="radio"], input[type="checkbox"] {
-  position: absolute;
-  left: 15px;
+  margin-right: 10px;
 }
 
-select {
-  margin-bottom: 15px;
+input:focus:not([type="radio"]):not([type="checkbox"]), select:focus, textarea:focus {
+  outline: 2px solid #46698b;
+  -webkit-outline-radius: 5px;
+  -moz-outline-radius: 5px;
+  background-color: #4ebbb5;
 }
 
-input::-webkit-input-placeholder {
-  text-align: right;
-  font-style: italic;
-  font-size: 1em;
-  padding-right: 10px;
-}
-
-input::-moz-input-placeholder {
-  text-align: right;
-  font-style: italic;
-  font-size: 1em;
-  padding-right: 10px;
-}
-
-input:-moz-input-placeholder {
-  text-align: right;
-  font-style: italic;
-  font-size: 1em;
-  padding-right: 10px;
-}
-
+input::-webkit-input-placeholder,
+input::-moz-input-placeholder,
+input:-moz-input-placeholder,
 input:-ms-webkit-input-placeholder {
   text-align: right;
   font-style: italic;
@@ -116,17 +107,58 @@ input:-ms-webkit-input-placeholder {
   padding-right: 10px;
 }
 
-/* Link Styles */
+h2 {
+  margin: 0;
+  padding: 25px 0 15px;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+header h2 {
+  color: #fff;
+  background-color: #2d3945;
+  padding: 25px;
+}
+
+h2+h3 {
+  margin: 0 auto; 
+  padding: 0; 
+  font-size: 1.1em;
+  text-align: left;
+}
+
+h2+p {
+  color: #b7bcbf;
+  margin: 0 auto;
+  font-size: 0.9em;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 29px;
+  border-bottom: 5px solid #2d3945;
+  width: 300px;
+}
+
+hr {
+  margin: 5px 0;
+  border-style: solid;
+  border-color: #2d3945;
+}
 
 a {
   text-decoration: none;
   color: #969db1;
 }
+
 a:hover {
   color: #6633ff;
 }
 
-/* Section Styles */
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 25px;
+  font-style: italic; 
+}
 
 .clearfix {
   clear: both;
@@ -134,10 +166,27 @@ a:hover {
 
 
 /* Styles for larger screens */
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 600px) {
 
-}
+  form, h2+p, legend, textarea, button {
+    width: 600px;
+  }
 
-@media screen and (min-width: 769px) {
-  
+  input:not([type="radio"]):not([type="checkbox"]), select {
+    display: inline-block;
+    width: 450px;
+    margin: 0 0 20px;
+  }
+
+  #contact label {
+    display: inline-block;
+    width: 125px;
+    margin-right: 20px;
+  }
+
+  #newsletter label {
+    width: 575px;
+  }
+
+
 }
