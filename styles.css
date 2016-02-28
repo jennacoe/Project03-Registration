@@ -166,7 +166,7 @@ a:hover {
 
 
 /* Styles for larger screens */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 760px) {
 
   form, h2+p, legend, textarea, button {
     width: 600px;

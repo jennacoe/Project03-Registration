@@ -31,8 +31,8 @@
             <input type="text" id="address" name="address"><br>
             <label for="city">City</label>
             <input type="text" id="city" name="city"><br>
-            <label>State</label>
-            <select>
+            <label for="states">State</label>
+            <select id="states" name="states">
               <option value="" selected disabled>Choose State</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
@@ -87,7 +87,7 @@
               <option value="WY">Wyoming</option>
             </select>       
             <label for="zipcode">Zip Code</label>
-            <input type="number" id="zipcode" name="zipcode"><br>
+            <input type="text" id="zipcode" name="zipcode"><br>
         </fieldset>
         <hr>
         <fieldset id="newsletter">
@@ -102,8 +102,8 @@
           <input type="radio" id="html-format" value="HTML" name="formats"><label for="html-format">HTML</label>
           <input type="radio" id="plain-text" value="Plain text" name="formats"><label for="plain-text">Plain text</label>
 
-          <label class="labelHeader">Other topics you'd like to hear about</label>
-          <textarea name="topics"></textarea>
+          <label for="topics" class="labelHeader">Other topics you'd like to hear about</label>
+          <textarea id="topics" name="topics"></textarea>
           <button type="submit">Sign Up</button>
         </fieldset>
       </form>
